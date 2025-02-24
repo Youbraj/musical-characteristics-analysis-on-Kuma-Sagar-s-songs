@@ -15,3 +15,5 @@ y_harmonic, y_percussive = librosa.effects.hpss(y)
 unebarque = Tonal_Fragment(y_harmonic, sr)
 unebarque.chromagram("Une Barque sur l\'Ocean")
 ```
+[![Watch the video](https://img.youtube.com/vi/JdDySf4agqQ/maxresdefault.jpg)](https://youtu.be/JdDySf4agqQ)
+
