@@ -1,6 +1,8 @@
 # YouTube-Music-Emotion-Detector
-Listening to music increases blood flow to brain regions responsible for generating and controlling human emotions. Interestingly, music can influence our mood, even if we are unable to recognize or replicate the notes and rhythms. Therefore, selecting the right type of music can have significant benefits, such as improving mental health, boosting study motivation, promoting relaxation, and fostering mental peace.
+A Python project utilizing Librosa and complementary libraries to analyze the music emotion of a given .mp3 file (e.g., G# minor or A major) by implementing the Krumhansl-Schmuckler key-finding algorithm.
 
-In this project, we present an approach that recognizes the emotional content of music using the Krumhansl-Kessler key profile and musical key characteristics. This approach is motivated by the absence of an efficient and reliable method for recognizing music emotion in the current context. The recognition of music emotion is based on its musical key, as music emotions and keys are closely related. Musical keys serve as fundamental elements of music that define the emotional expression of a piece.
+# Analytical Tools
+We will first analyze part of "Une Barque sur l'Ocean," a complex piece for solo piano by French composer Maurice Ravel. Click the below to be taken to Soundcloud and hear the .mp3 file:
 
-This method can also be applied to understanding the emotional tone of songs sung in unknown languages. By identifying the emotion conveyed in the music, songs can be classified according to their emotional content, which can then be used for emotion-based music recommendations, music information retrieval, and therapeutic purposes. In our model, emotions are classified into 24 musical keys, with the understanding that each piece of music corresponds to a single key. Our approach yields high accuracy in recognizing music emotion, demonstrating its potential effectiveness.
+https://soundcloud.com/jack-mcarthur-6407193/f-minor-segment-of-une-barque-sur-locean
+
