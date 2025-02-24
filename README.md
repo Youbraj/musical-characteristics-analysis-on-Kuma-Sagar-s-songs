@@ -4,5 +4,6 @@ A Python project utilizing Librosa and complementary libraries to analyze the mu
 # Analytical Tools
 We will first analyze part of "Une Barque sur l'Ocean," a complex piece for solo piano by French composer Maurice Ravel. Click the below to be taken to Soundcloud and hear the .mp3 file:
 
+[<img alt="alt_text" width="40px" src="images/image.PNG" />](https://www.google.com/)
 https://soundcloud.com/jack-mcarthur-6407193/f-minor-segment-of-une-barque-sur-locean
 
