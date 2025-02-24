@@ -15,7 +15,7 @@ y_harmonic, y_percussive = librosa.effects.hpss(y)
 furfuri = Tonal_Fragment(y_harmonic, sr)
 furfuri.chromagram("furfuri-kuma-sagar")
 ```
-
+[<img src="furfuri_chromagram.png">](https://github.com/Youbraj/YouTube-Music-Emotion-Detector/blob/main/furfuri_chromagram.png)
 It is clear that the clip consists of distinct sections, each highlighting different pitch classes. For instance, in the segment from t=0 sec to t=22 sec, the pitches C# and F# dominate. To quantify the usage of each pitch class in this section, we can apply the following code:
 
 ```python
