@@ -1,4 +1,4 @@
-# YouTube-Music-Emotion-Detector
+# Music-Emotion-Detector
 A Python project leveraging Librosa and other libraries to analyze the emotional tone of a given audio file (e.g., an .mp3) by employing the Krumhansl-Schmuckler key-finding algorithm.
 
 # Analytical Tools
