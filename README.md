@@ -74,14 +74,16 @@ A minor 	 -0.403
 A# minor 	  0.739
 B minor 	 -0.326
 ```
-This highlights A# minor as a strong second-best option and facilitates a comparison of the goodness of fit across all keys.
+This highlights A# major as a strong second-best option and facilitates a comparison of the goodness of fit across all keys.
 
 This algorithm offers high accuracy in its results, as demonstrated in the next section of the 'Furfuri' clip, from t=22 sec to t=33 sec, which is also in A# minor:
 ```python
 furfuri_g_min = Tonal_Fragment(y_harmonic, sr, tstart=22, tend=33)
 furfuri_g_min.print_key()
+print(furfuri_g_min.key_return())
 ```
 ```
-likely key: A# minor, correlation: 0.7
+>> likely key: A# minor, correlation: 0.7
+>> Emotion: Joyful, Quaint, Cheerful
 ```
-Other sound clips can also be analyzed, with two additional examples provided in the Jupyter notebook [musicemotiondetector.ipynb](https://github.com/Youbraj/YouTube-Music-Emotion-Detector/blob/main/musicemotiondetector.ipynb) within this repository. The Tonal_Fragment class is saved in the [emotiondetector.py](https://github.com/Youbraj/YouTube-Music-Emotion-Detector/blob/main/emotiondetector.py) file. Note that analyzing .mp3 files requires FFMpeg to be installed, while .wav and other file formats can be processed by Librosa without it. For the most accurate analyses, it's recommended to separate the harmonic and percussive components of the sample and use sound samples that are at least 10 seconds long.
+Other sound clips can also be analyzed, with one additional examples provided in the Jupyter notebook [musicemotiondetector.ipynb](https://github.com/Youbraj/YouTube-Music-Emotion-Detector/blob/main/musicemotiondetector.ipynb) within this repository. The Tonal_Fragment class is saved in the [emotiondetector.py](https://github.com/Youbraj/YouTube-Music-Emotion-Detector/blob/main/emotiondetector.py) file. Note that analyzing .mp3 files requires FFMpeg to be installed, while .wav and other file formats can be processed by Librosa without it. For the most accurate analyses, it's recommended to separate the harmonic and percussive components of the sample and use sound samples that are at least 10 seconds long.
