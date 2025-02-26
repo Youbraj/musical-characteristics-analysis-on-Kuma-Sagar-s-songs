@@ -16,7 +16,7 @@ furfuri = Tonal_Fragment(y_harmonic, sr)
 furfuri.chromagram("furfuri-kuma-sagar")
 ```
 [<img src="furfuri_chromagram.png">](https://github.com/Youbraj/YouTube-Music-Emotion-Detector/blob/main/furfuri_chromagram.png)
-It is clear that the clip consists of distinct sections, each highlighting different pitch classes. For instance, in the segment from t=0 sec to t=22 sec, the pitches C# and F# dominate. To quantify the usage of each pitch class in this section, we can apply the following code:
+It is clear that the clip consists of distinct sections, each highlighting different pitch classes. For instance, in the segment from t=0 sec to t=22 sec, the pitches A# and F dominate. To quantify the usage of each pitch class in this section, we can apply the following code:
 
 ```python
 furfuri_asharp_min = Tonal_Fragment(y_harmonic, sr, tend=22)
@@ -36,7 +36,7 @@ A 	 0.311
 A# 	 1.000
 B 	 0.363
 ```
-A# appears to be the most frequently used pitch, followed by G. To identify the key of the section from t=0 sec to t=22 sec, we can use the following code:
+A# appears to be the most frequently used pitch, followed by F. To identify the key of the section from t=0 sec to t=22 sec, we can use the following code:
 ```python
 furfuri_asharp_min = Tonal_Fragment(y_harmonic, sr, tend=22)
 furfuri_asharp_min.print_key()
