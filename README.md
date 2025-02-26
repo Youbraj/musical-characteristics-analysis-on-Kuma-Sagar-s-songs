@@ -19,8 +19,8 @@ furfuri.chromagram("furfuri-kuma-sagar")
 It is clear that the clip consists of distinct sections, each highlighting different pitch classes. For instance, in the segment from t=0 sec to t=22 sec, the pitches C# and F# dominate. To quantify the usage of each pitch class in this section, we can apply the following code:
 
 ```python
-furfuri_fsharp_min = Tonal_Fragment(y_harmonic, sr, tend=22)
-furfuri_fsharp_min.print_chroma()
+furfuri_asharp_min = Tonal_Fragment(y_harmonic, sr, tend=22)
+furfuri_asharp_min.print_chroma()
 ```
 ```
 C 	 0.127
@@ -36,17 +36,17 @@ A 	 0.311
 A# 	 1.000
 B 	 0.363
 ```
-A# appears to be the most frequently used pitch, followed by F. To identify the key of the section from t=0 sec to t=22 sec, we can use the following code:
+A# appears to be the most frequently used pitch, followed by G. To identify the key of the section from t=0 sec to t=22 sec, we can use the following code:
 ```python
-furfuri_fsharp_maj = Tonal_Fragment(y_harmonic, sr, tend=22)
-furfuri_fsharp_maj.print_key()
+furfuri_asharp_min = Tonal_Fragment(y_harmonic, sr, tend=22)
+furfuri_asharp_min.print_key()
 ```
 ```
->> likely key: F# minor, correlation: 0.762
+>> likely key: A# minor, correlation: 0.739
 ```
 The key of the song is identified using the Krumhansl-Schmuckler key-finding algorithm. This algorithm compares the prominence of each pitch class in the sample to typical profiles of both major and minor keys, selecting the key with the highest correlation coefficient. In this case, the algorithm correctly identifies A# minor as the key, even though F is not the most prominent pitch in this section. Unlike many other algorithms, which assume that the most prominent pitch is the 'tonic' or root of the key, this algorithm avoids such assumptions, making it more robust. Additionally, the correlation coefficients of the chroma data can be printed for further analysis:
 ```python
-furfuri_fsharp_min.corr_table()
+furfuri_asharp_min.corr_table()
 ```
 ```
 C major 	 -0.519
@@ -78,8 +78,8 @@ This highlights A# minor as a strong second-best option and facilitates a compar
 
 This algorithm offers high accuracy in its results, as demonstrated in the next section of the 'Furfuri' clip, from t=22 sec to t=33 sec, which is also in A# minor:
 ```python
-furfuri_e_min = Tonal_Fragment(y_harmonic, sr, tstart=22, tend=33)
-furfuri_e_min.print_key()
+furfuri_g_min = Tonal_Fragment(y_harmonic, sr, tstart=22, tend=33)
+furfuri_g_min.print_key()
 ```
 ```
 likely key: A# minor, correlation: 0.7
