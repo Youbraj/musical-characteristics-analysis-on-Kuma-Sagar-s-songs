@@ -20,7 +20,7 @@ It is clear that the clip consists of distinct sections, each highlighting diffe
 
 ```python
 furfuri_asharp_min = Tonal_Fragment(y_harmonic, sr, tend=22)
-furfuri_asharp_min.print_chroma()
+furfuri_asharp_min.print_chroma_e()
 ```
 ```
 C 	 0.127
@@ -33,7 +33,7 @@ F# 	 0.312
 G 	 0.227
 G# 	 0.515
 A 	 0.311
-A# 	 1.000
+A# 	 1.000 (Max)
 B 	 0.363
 ```
 A# appears to be the most frequently used pitch, followed by F. To identify the key of the section from t=0 sec to t=22 sec, we can use the following code:
@@ -46,7 +46,7 @@ furfuri_asharp_min.print_key()
 ```
 The key of the song is identified using the Krumhansl-Schmuckler key-finding algorithm. This algorithm compares the prominence of each pitch class in the sample to typical profiles of both major and minor keys, selecting the key with the highest correlation coefficient. In this case, the algorithm correctly identifies A# minor as the key, even though F is not the most prominent pitch in this section. Unlike many other algorithms, which assume that the most prominent pitch is the 'tonic' or root of the key, this algorithm avoids such assumptions, making it more robust. Additionally, the correlation coefficients of the chroma data can be printed for further analysis:
 ```python
-furfuri_asharp_min.corr_table()
+furfuri_asharp_min.corr_table_e()
 ```
 ```
 C major 	 -0.519
@@ -71,7 +71,7 @@ F# minor 	 -0.268
 G minor 	  0.175
 G# minor 	  0.202
 A minor 	 -0.403
-A# minor 	  0.739
+A# minor 	  0.739 (Max) 	 Emotion: Terrible, the Night, Mocking
 B minor 	 -0.326
 ```
 This highlights A# major as a strong second-best option and facilitates a comparison of the goodness of fit across all keys.
