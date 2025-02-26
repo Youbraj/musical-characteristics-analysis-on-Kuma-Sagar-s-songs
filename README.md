@@ -4,7 +4,7 @@ A Python project leveraging Librosa and other libraries to analyze the emotional
 # Analytical Tools
 Let us begin by analyzing a segment of the song 'Furfuri,' sung by [Kuma Sagar](https://www.google.com/search?q=Kuma+sagar&client=ubuntu&hs=HRz&sca_esv=5a31cca9ef420a11&channel=fs&ei=jou8Z6OpDY_c2roPw8CNoQU&ved=0ahUKEwijqMvDy9yLAxUPrlYBHUNgI1QQ4dUDCA8&uact=5&oq=Kuma+sagar&gs_lp=Egxnd3Mtd2l6LXNlcnAiCkt1bWEgc2FnYXIyBxAAGIAEGBMyBxAAGIAEGBMyBxAAGIAEGBMyBxAAGIAEGBMyBxAAGIAEGBMyBxAAGIAEGBMyBxAAGIAEGBMyBxAAGIAEGBMyBxAAGIAEGBMyBxAAGIAEGBNIzB1Q6QhYhxtwAXgBkAEAmAHnAaAB7w-qAQUwLjUuNbgBA8gBAPgBAZgCCqACthGoAgDCAg4QABiABBixAxiDARiKBcICCxAAGIAEGLEDGIMBwgILEAAYgAQYsQMYigXCAggQABiABBixA8ICChAAGIAEGEMYigXCAgUQABiABJgDBvEFH18sTtkJ8c6SBwQyLTEwoAeJHw&sclient=gws-wiz-serp). Click the image below to access it on YouTube:
 [<img src="furfuri-kuma-sagar_YT_link.png">](https://youtu.be/sCQDGs7W6mE?si=pT1_AbXhBbzEEgpt)
-<img align="right" width="200" height="262" src="https://github.com/Youbraj/musical-characteristics-analysis-on-Kuma-Sagar-s-songs/blob/main/kuma_sagar_concert.gif">
+
 This composition features multiple sections in varying keys, which we can observe by loading the piece using the Librosa library and passing it to a Tonal_Fragment instance. Below, we perform this analysis and generate a chromagram, a chart that visualizes the intensity of each pitch class (C, C#, D, D#, etc.) over time.
 
 ```python
